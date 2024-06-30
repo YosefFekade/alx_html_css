@@ -1,0 +1,104 @@
+body{
+    background-image: url(./Object.png) ;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+#nav{
+    display: inline-flex;
+    gap: 650px;
+    justify-content: space-between;
+    padding: 20px;  
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+li{
+    list-style: none;
+}
+
+a{
+    color: aliceblue;
+    text-decoration:none;
+}
+#first{
+    display: flex;
+    flex-direction: column;
+    
+}
+#big1{
+    display: flex;
+    flex-direction: column;
+}
+#span{
+    display: flex;
+    gap: 30px;
+}
+h1{
+    font-size: 100px;
+    margin: 0;    
+    margin-top: 100px;
+}
+#big1 > *{
+    flex-basis: 40px;
+    color: white;
+    align-self: center;   
+}
+button{
+    background-color: #C271FF;
+    border-radius: 20px;
+    width: 180px;
+    border: #C271FF;    
+}
+
+
+
+
+#big2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+#big2 >*{
+    display: flex;
+    flex-basis: 40px;
+    gap: 10px;   
+}
+h2{
+    margin-top: 180px;
+    margin-bottom: 0px;
+}
+#pros > div{
+    width: 150px;
+    margin: 80px;
+    margin-bottom: 0px;
+}
+#Bruce{
+    border-radius: 50%;
+}
+
+
+
+#second{
+    padding: 100px;
+    background-color: #C271FF;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    color: white;
+    margin: 0;
+}
+#q{
+    width: 700px;
+    font-size: large;
+}
+
+
+
+#third{
+    background-color: #F2F2F2;
+}
