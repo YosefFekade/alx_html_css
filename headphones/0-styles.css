@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'SourceSansPro-Semibold';
+    src: url('../fonts/SourceSansPro-Semibold.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Semibold';
+    src: url('../fonts/SourceSansPro-Semibold.otf') format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url('../fonts/SourceSansPro-Bold.otf') format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* hamburgg */
+
+
+/* Basic styling for the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+
+/* Navigation links */
+.nav {
+    display: flex;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #f1f1f1;
+}
+
+/* Hamburger menu icon */
+.nav-toggle {
+    display: none; /* Hide by default for larger screens */
+}
+
+.nav-toggle-label {
+    cursor: pointer;
+    padding: 10px;
+    display: none; /* Hide by default for larger screens */
+}
+
+/* Styling the hamburger icon bars */
+.nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.4s ease;
+}
+
+/* When the checkbox is checked, display the navigation */
+.nav-toggle:checked + .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 170px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Adjust hamburger icon position for smaller screens */
+@media screen and (max-width: 480px) {
+    *{
+        font-size: x-small;
+    }
+    img{
+        width: auto;
+    }
+    .nav {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        text-align: center;
+    }
+
+    .nav a {
+        padding: 10px 0;
+    }
+
+    .nav-toggle-label {
+        display: block; /* Display the hamburger icon */
+    }
+    .main-title{
+        margin-top: 150px;
+       
+    }
+    .p-section{
+        margin: 0;
+    }
+    #faviconM,.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;   
+        gap: 50px;
+    }
+    
+}
+ @media (max-width: 768px) {
+        .nav {
+            flex-direction: column;
+            max-height: 0;
+        }
+    
+        .menu-icon {
+            display: block;
+        }
+    
+        #menu-toggle:checked+.menu-icon+.nav {
+            max-height: 200px;
+            /* Adjust as needed */
+        }
+    
+        .nav a {
+            margin-right: 0;
+            padding: 15px 0;
+            text-align: center;
+            width: 100%;
+        }
+        #faviconM,.container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;   
+            gap: 50px;
+        }
+        
+
+    }
+/* hamburgg*/
+
+
+
+
+
+
+
+body {
+    font-family: 'source sans pro semibold', sans-serif;
+    line-height: 1.6;
+    /* max-width: 1000px; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    /* position: absolute; */
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.banner-background {
+    background-image: url('./images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    height: 120vh;
+}
+
+
+
+
+.main-title button:hover {
+    background-color: rgb(74, 54, 79);
+    opacity: 0.9;
+}
+
+.p-section p {
+    padding-top: 80px;
+    text-wrap: wrap;
+    max-width: 45rem;
+    margin: 0 auto;
+    font-family: 'Mycustomfont', sans-serif;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+}
+
+
+
+
+
+button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    width: 200px;
+    height: auto;
+    justify-content: center;
+
+}
+
+button:hover {
+    background-color: #ff4d4d;
+}
+

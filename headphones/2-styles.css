@@ -1,0 +1,470 @@
+@font-face {
+    font-family: 'SourceSansPro-Semibold';
+    src: url('../fonts/SourceSansPro-Semibold.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Semibold';
+    src: url('../fonts/SourceSansPro-Semibold.otf') format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url('../fonts/SourceSansPro-Bold.otf') format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* hamburgg */
+
+
+/* Basic styling for the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+
+/* Navigation links */
+.nav {
+    display: flex;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #f1f1f1;
+}
+
+/* Hamburger menu icon */
+.nav-toggle {
+    display: none; /* Hide by default for larger screens */
+}
+
+.nav-toggle-label {
+    cursor: pointer;
+    padding: 10px;
+    display: none; /* Hide by default for larger screens */
+}
+
+/* Styling the hamburger icon bars */
+.nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.4s ease;
+}
+
+/* When the checkbox is checked, display the navigation */
+.nav-toggle:checked + .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 170px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Adjust hamburger icon position for smaller screens */
+@media screen and (max-width: 480px) {
+    *{
+        font-size: x-small;
+    }
+    img{
+        width: auto;
+    }
+    .nav {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        text-align: center;
+    }
+
+    .nav a {
+        padding: 10px 0;
+    }
+
+    .nav-toggle-label {
+        display: block; /* Display the hamburger icon */
+    }
+    .main-title{
+        margin-top: 150px;
+       
+    }
+    .p-section{
+        margin: 0;
+    }
+    #faviconM,.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;   
+        gap: 50px;
+    }
+    
+}
+ @media (max-width: 768px) {
+        .nav {
+            flex-direction: column;
+            max-height: 0;
+        }
+    
+        .menu-icon {
+            display: block;
+        }
+    
+        #menu-toggle:checked+.menu-icon+.nav {
+            max-height: 200px;
+            /* Adjust as needed */
+        }
+    
+        .nav a {
+            margin-right: 0;
+            padding: 15px 0;
+            text-align: center;
+            width: 100%;
+        }
+        #faviconM,.container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;   
+            gap: 50px;
+        }
+        
+
+    }
+/* hamburgg*/
+
+
+
+
+
+
+
+body {
+    font-family: 'source sans pro semibold', sans-serif;
+    line-height: 1.6;
+    /* max-width: 1000px; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    /* position: absolute; */
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.banner-background {
+    background-image: url('./images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    height: 120vh;
+}
+
+
+
+
+.main-title button:hover {
+    background-color: rgb(74, 54, 79);
+    opacity: 0.9;
+}
+
+.p-section p {
+    padding-top: 80px;
+    text-wrap: wrap;
+    max-width: 45rem;
+    margin: 0 auto;
+    font-family: 'Mycustomfont', sans-serif;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+}
+
+.wat-we-do {
+    text-align: center;
+    text-wrap: balance;
+}
+
+.wat-we-do h2 {
+    margin-top: 5rem;
+    font-weight: normal;
+    font-size: 2rem;
+    font-family: 'MyCustomFont', 'SourceSansPro-Semibold', sans-serif;
+}
+
+.wat-we-do .p {
+    padding: 3rem;
+    text-align: center;
+    text-wrap: wrap;
+    max-width: 60%;
+    margin: 0 auto;
+    line-height: 1.5;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    margin-top: 6rem;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+
+}
+
+.px {
+    font-weight: bold;
+    font-family: 'Mycustomfonts', sans-serif;
+}
+
+.items p {
+    font-family: 'Mycustomfonts', sans-serif;
+}
+
+.banner {
+    position: relative;
+    background-image: url(./images/headphones_hero_2.jpg);
+    align-items: center;
+    text-align: center;
+    font-family: 'Mycustomfonts', sans-serif;
+    margin-top: 7em;
+    color: white;
+    background-size: cover;
+}
+
+.banner h2 {
+    padding-top: 11rem;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Mycustomfonts', sans-serif;
+    font-size: 2rem;
+}
+
+.banner p {
+    font-family: 'Mycustomfonts', sans-serif;
+    max-width: 40rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+    text-wrap: wrap;
+}
+
+.container2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    justify-items: center;
+}
+
+.items2 img {
+    margin-top: 6rem;
+    height: 150px;
+    width: auto;
+    margin-bottom: 7rem;
+}
+
+.contact-form-container {
+    background: #fff;
+    padding: 2rem;
+    max-width: 30%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.contact-form-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #162740;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 20rem; */
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #162740;
+    width: 100%;
+    margin-top: 5px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #0b0d0f;
+}
+
+textarea {
+    resize: none;
+    height: 10px;
+}
+
+button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    width: 200px;
+    height: auto;
+    justify-content: center;
+
+}
+
+button:hover {
+    background-color: #ff4d4d;
+}
+
+.footer {
+    background-color: #0B1226;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-social img:hover {
+    opacity: 0.9;
+}
+
+.footer-content,
+.footer-social {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-content>.footer-logo {
+    text-align: left;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #5a5a5a;
+}
+.oIcon{
+    width: 150px; 
+    height: 150px; 
+    position: relative;
+    background-color: #FF6565; 
+    transform: rotate(-3600deg);
+    clip-path: polygon(
+        50% 0%,
+        100% 38%,
+        82% 100%,
+        18% 100%,
+        0% 38%
+    );
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+}
+#faviconM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    color: white;
+    gap: 50px;
+}
+#cont3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+    gap: 50px;
+}
